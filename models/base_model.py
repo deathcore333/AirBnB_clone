@@ -54,12 +54,9 @@ class BaseModel:
         models.storage.save()
 
 
-
     def __str__(self):
         """
         returns string type representation of object instance
         """
         class_name = type(self).__name__
         return '[{}] ({}) {}'.format(class_name, self.id, self.__dict__)
-
-
